@@ -176,7 +176,7 @@ a, tw-link, .link-internal, .macro-link, .passage a {
 }
 
 /* --------------------------------------- */
-/* TITLE – oben links                       */
+/* TITLE – oben links (mehr Schatten)       */
 /* --------------------------------------- */
 
 .title {
@@ -190,27 +190,34 @@ a, tw-link, .link-internal, .macro-link, .passage a {
   margin: 0;
   font-size: 2.8em;
   color: white;
-  text-shadow: 0 0 12px rgba(0,0,0,0.75);
+
+  /* stärkerer, weicher Schatten */
+  text-shadow:
+    0 0 10px rgba(0,0,0,0.9),
+    0 0 20px rgba(0,0,0,0.7);
 }
 
 /* --------------------------------------- */
-/* SUBTITLE – eine Zeile über Buttons       */
+/* SUBTITLE – näher an Buttons              */
 /* --------------------------------------- */
 
 .subtitle {
   position: absolute;
-  bottom: 95px;
+  bottom: 78px; /* vorher 95px → jetzt näher an Buttons */
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
 
-  font-size: 1.2em;
+  font-size: 1.2em;   /* exakt Button-Größe */
   font-weight: 700;
   color: white;
   text-align: center;
   white-space: nowrap;
 
-  text-shadow: 0 0 8px rgba(0,0,0,0.75);
+  /* stärkerer Schatten wie Titel */
+  text-shadow:
+    0 0 8px rgba(0,0,0,0.9),
+    0 0 16px rgba(0,0,0,0.7);
 }
 
 /* --------------------------------------- */
@@ -229,7 +236,7 @@ a, tw-link, .link-internal, .macro-link, .passage a {
   justify-content: center;
   align-content: center;
 
-  max-width: calc(100vw - 380px);
+  max-width: calc(100vw - 380px); /* Platz für Karte */
   gap: 10px;
   line-height: 1.2;
 }
@@ -283,7 +290,9 @@ a, tw-link, .link-internal, .macro-link, .passage a {
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="MAPA" tags="" position="600,50" size="100,100">&lt;div class=&quot;scene&quot;&gt;
+}
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="MAPA" tags="" position="600,50" size="100,100">&lt;div class=&quot;scene&quot;&gt;
 
   &lt;!-- Vollbild YouTube Hintergrund --&gt;
   &lt;div class=&quot;youtube-bg&quot;&gt;
